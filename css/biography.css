@@ -6,9 +6,9 @@ body {
   margin: 0;
 }
 
-ul{
-  border: 5px solid purple;
+ul li{
   background-color: #eeeeee;
+  border: 5px solid purple;
   padding: 1em;
 }
 
@@ -35,5 +35,5 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: green;
+  background-color: green;
 }
