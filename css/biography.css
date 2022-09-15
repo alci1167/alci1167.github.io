@@ -17,7 +17,7 @@ h2 {
   font-size: 1.5em;
   font-style: italic;
 }
-.ul li{
+ul{
   background-color: #eeeeee;
   border: 5px solid;
   padding: 1em;
@@ -34,5 +34,5 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: green;
 }
