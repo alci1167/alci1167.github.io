@@ -29,13 +29,14 @@ h2 {
   font-weight: bold;
 }
 
+a:link, a:visited {
+  text-decoration: underline;
+  color: #fb6542;
+}
+
 a:hover {
   text-decoration: none;
   color: green;
 }
 
-a:link, a:visited {
-  text-decoration: underline;
-  color: #fb6542;
-}
 
