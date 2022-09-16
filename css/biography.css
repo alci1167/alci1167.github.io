@@ -29,11 +29,12 @@ h2 {
   font-weight: bold;
 }
 
+a:hover {
+  color: green;
+}
+
 a:link,
 a:visited {
   color: #fb6542;
 }
 
-a:hover {
-  color: green;
-}
