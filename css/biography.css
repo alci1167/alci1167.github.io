@@ -33,7 +33,7 @@ a:hover {
   color: green;
 }
 
-a:visited {
+a:link, a:visited {
   text-decoration: none;
   color: #fb6542;
 }
