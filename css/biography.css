@@ -35,6 +35,7 @@ a:hover {
 }
 
 a:link, a:visited {
+  text-decoration: underline;
   color: #fb6542;
 }
 
