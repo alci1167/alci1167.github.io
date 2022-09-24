@@ -18,22 +18,6 @@ article {
   position: relative;
 }
 
-article {
-  background: top / contain
-              no-repeat
-              url(/img/top-image.png),
-              bottom / contain
-              no-repeat
-              url(/img/bottom-image.png),
-              linear-gradient(rgba(0, 0, 0, 0.25)0%,
-                              rgba(0, 0, 0, 0)25%,
-                              rgba(0, 0, 0, 0)75%,
-                              rgba(0, 0, 0, 0.25)100%);
-  background-color: #ffff;
-  border-top: 1mm solid red;
-  border-bottom: 1mm solid red;
-}
-
 address {
   position: absolute;
   bottom: 8mm;
@@ -54,11 +38,4 @@ h1 {
   text-shadow: 1px 1px 1px black;
 }
 
-h1{
-  background-image: url(/img/logo.png);
-  text-shadow: 4px 4px black;
-  border-radius: 50%;
-  filter: drop-shadow(4px 4px 4px black);
-
-}
 /* Your CSS below here */
