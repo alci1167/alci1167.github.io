@@ -58,6 +58,6 @@ grid-gap: 1px;
 
 .feature {
 width: 200px;
-display: flex;
-flex-wrap: wrap;
+float: left;
+margin-right: 15px;
 }

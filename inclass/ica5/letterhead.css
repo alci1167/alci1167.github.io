@@ -43,10 +43,10 @@ h1 {
 article {
   background: top / contain
               no-repeat
-              url(/img/top-image.png),
+              url(top-image.png),
               bottom / contain
               no-repeat
-              url(/img/bottom-image.png),
+              url(bottom-image.png),
               linear-gradient(rgba(0, 0, 0, 0.25)0%,
                               rgba(0, 0, 0, 0)25%,
                               rgba(0, 0, 0, 0)75%,
@@ -57,7 +57,7 @@ article {
 }
 
 h1{
-  background-image: url(/img/logo.png);
+  background-image: url(logo.png);
   text-shadow: 4px 4px black;
   border-radius: 50%;
   filter: drop-shadow(4px 4px 4px black);
