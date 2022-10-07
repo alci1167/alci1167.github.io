@@ -1,0 +1,145 @@
+body {
+    background-color: #edf2f4;
+    color: black;
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+}
+
+h1{
+    font-family: nasalization, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5;
+}
+
+h3{
+    font-family: nasalization, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25;
+    color: #3F7D20;
+}
+
+
+nav {
+    background-color: #72b01d;
+    padding: .5em;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    color: #edf2f4;
+    text-decoration: none;
+    padding: .5em 1em;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+p{
+    font-size: 1em;
+    padding: 30px;
+    margin: 30px;
+}
+
+.grid {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    place-items: center;
+}
+
+
+.workgrid{
+    grid-area: auto;
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+}
+
+
+.othermain{
+    background-color: #FF9907;
+    border-style: double;
+    border-color: #ff5700;
+    color: #edf2f4;
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    place-items: center;
+}
+
+.button {
+    transition-duration: 0.4s;
+    text-decoration: none;
+    background-color: #72b01d;
+    color: #edf2f4; 
+    margin: auto;
+    
+}
+  
+.button:hover {
+    background-color: #72b01d;
+    text-decoration: underline; 
+    color: white;
+}
+
+.photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+}
+
+.links{
+    color: #ff9907;
+    text-decoration: none;
+    text-align: center;
+}
+
+.links:hover{
+    color: #ff9907;
+    text-decoration: underline;
+}
+
+.links:visited{
+    color: #ff5700;
+    text-decoration: none;
+}
+
+hr {
+    display: block;
+    margin-top: 0.125em;
+    margin-bottom: 0.125em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border: 2px solid #72b01d;
+}
+
+@media screen and (max-width: 400px) {
+    main, nav ul {
+        flex-direction: column;
+    }
+
+  }
