@@ -36,6 +36,42 @@ nav a{
     padding: .5em 1em;
 }
 
+@media screen and (max-width: 600px) {
+    nav a {
+      float: none;
+      width: 100%;
+    }
+    .aboutflex{
+        width: 100%;
+    }
+}
+
+.flex{
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+
+}
+
+.aboutflex{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.aboutflex1{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.aboutflex2{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
 
 nav ul {
     margin: 0;
@@ -50,17 +86,6 @@ p{
     padding: 30px;
     margin: 30px;
 }
-
-.grid {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 980px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    place-items: center;
-}
-
 
 .workgrid{
     grid-area: auto;
@@ -103,12 +128,10 @@ p{
 }
 
 .photos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: auto;
 }
 
 .links{
@@ -135,6 +158,18 @@ hr {
     margin-right: auto;
     border-style: inset;
     border: 2px solid #72b01d;
+}
+
+.feature{
+    width: 300px;
+}
+
+.indeximgs1{
+    width: 425px;
+}
+
+.indeximgs2{
+    width: 300px;
 }
 
 @media screen and (max-width: 400px) {
