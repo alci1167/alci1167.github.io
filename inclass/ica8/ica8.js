@@ -1,12 +1,19 @@
 let body = document.querySelector('body');
-body.addEventListener('click', giveAlert);
+body.addEventListener('dblclick', giveAlert);
 
 function giveAlert() {
     alert('this is an alert');
 }
 
-body.addEventListener('hover', colorChange);
+const bttn = document.getElementById('bttn');
+bttn.addEventListener('click', colorChange);
 
 function colorChange() {
     this.style.backgroundColor = "red";
+}
+
+document.getElementById("demo").addEventListener("keypress", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").style.backgroundColor = "blue";
 }
