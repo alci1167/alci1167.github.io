@@ -16,6 +16,11 @@ body {
   margin: 0 auto;
 }
 
+.displayed-img{
+  width: 640px;
+  height: 480px;
+}
+
 .full-img {
   position: relative;
   display: block;
@@ -50,7 +55,3 @@ button {
   cursor: pointer;
 }
 
-.displayed-img{
-  width: 640px;
-  height: 480px;
-}
