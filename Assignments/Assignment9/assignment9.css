@@ -49,3 +49,8 @@ button {
   float: left;
   cursor: pointer;
 }
+
+.displayed-img{
+  width: 640px;
+  height: 480px;
+}
