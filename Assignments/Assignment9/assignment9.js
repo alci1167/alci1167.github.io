@@ -7,11 +7,11 @@ const overlay = document.querySelector('.overlay');
 
 const images = ['Dog.JPG', `Flowers.JPG`, `Squirrel.JPG`, `Tree.JPG`, `City.JPG`];
 const alts = {
-    'Dog.JPG' : 'Dog',
-    'Flowers.JPG' : 'Flowers',
-    'Squirrel.JPG' : 'Squirrel',
-    'Tree.JPG' : 'Tree',
-    'City.JPG' : 'City'
+  'Dog.JPG' : 'Dog',
+  'Flowers.JPG' : 'Flowers',
+  'Squirrel.JPG' : 'Squirrel',
+  'Tree.JPG' : 'Tree',
+  'City.JPG' : 'City'
 }
 
 /* Looping through images */
