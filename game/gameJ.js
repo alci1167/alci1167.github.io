@@ -1,5 +1,5 @@
 const canvas = document.getElementById('canvas1');
-const ctx = canvas.getContext('2d');
+const contxt = canvas.getContext('2d');
 canvas.width = 900;
 canvas.height = 600;
 
@@ -59,8 +59,8 @@ class Cell {
     }
     draw(){
         if (mouse.x && mouse.y && collision(this, mouse)){
-            ctx.strokeStyle = 'black';
-            ctx.strokeRect(this.x, this.y, this.width, this.height);
+            contxt.strokeStyle = 'black';
+            contxt.strokeRect(this.x, this.y, this.width, this.height);
         }
     }
 }
@@ -85,16 +85,16 @@ class Projectile {
         this.width = 10;
         this.height = 10;
         this.power = 20;
-        this.speed = 5;
+        this.speed = 10;
     }
     update(){
         this.x += this.speed;
     }
     draw(){
-        ctx.fillStyle = 'black';
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.width, 0, Math.PI * 2);
-        ctx.fill();
+        contxt.fillStyle = 'black';
+        contxt.beginPath();
+        contxt.arc(this.x, this.y, this.width, 0, Math.PI * 2);
+        contxt.fill();
     }
 }
 function handleProjectiles(){
@@ -145,14 +145,14 @@ class Defender {
     draw(){
         //ctx.fillStyle = 'blue';
         //ctx.fillRect(this.x, this.y, this.width, this.height);
-        ctx.fillStyle = 'gold';
-        ctx.font = '30px Orbitron';
-        ctx.fillText(Math.floor(this.health), this.x + 15, this.y + 30);
+        contxt.fillStyle = 'gold';
+        contxt.font = '30px Orbitron';
+        contxt.fillText(Math.floor(this.health), this.x + 15, this.y + 30);
 
         if (this.choosenDefender ===1){
-            ctx.drawImage(defender1, this.frameX * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height);
+            contxt.drawImage(defender1, this.frameX * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height);
         } else if (this.choosenDefender === 2){
-            ctx.drawImage(defender2, this.frameX * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height);
+            contxt.drawImage(defender2, this.frameX * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height);
         }
         
     }
@@ -243,16 +243,16 @@ function chooseDefender(){
 
     }
 
-    ctx.lineWidth = 1;
-    ctx.fillStyle = 'rgba(0,0,0,0.2)';
-    ctx.fillRect(card1.x, card1.y, card1.width, card1.height);
-    ctx.strokeStyle = card1stroke;
-    ctx.strokeRect(card1.x, card1.y, card1.width, card1.height);
-    ctx.drawImage(defender1, 0, 0, 200, 200, 0, 5, 200/2, 200/2);
-    ctx.fillRect(card2.x, card2.y, card2.width, card2.height);
-    ctx.strokeStyle = card2stroke;
-    ctx.drawImage(defender2, 0, 0, 200, 200, 75, 5, 200/2, 200/2);
-    ctx.strokeRect(card2.x, card2.y, card2.width, card2.height);
+    contxt.lineWidth = 1;
+    contxt.fillStyle = 'rgba(0,0,0,0.2)';
+    contxt.fillRect(card1.x, card1.y, card1.width, card1.height);
+    contxt.strokeStyle = card1stroke;
+    contxt.strokeRect(card1.x, card1.y, card1.width, card1.height);
+    contxt.drawImage(defender1, 0, 0, 200, 200, 0, 5, 200/2, 200/2);
+    contxt.fillRect(card2.x, card2.y, card2.width, card2.height);
+    contxt.strokeStyle = card2stroke;
+    contxt.drawImage(defender2, 0, 0, 200, 200, 75, 5, 200/2, 200/2);
+    contxt.strokeRect(card2.x, card2.y, card2.width, card2.height);
 
 }
 
@@ -294,10 +294,10 @@ class Enemy {
     draw(){
         //ctx.fillStyle = 'red';
         //ctx.fillRect(this.x, this.y, this.width, this.height);
-        ctx.fillStyle = 'black';
-        ctx.font = '30px Orbitron';
-        ctx.fillText(Math.floor(this.health), this.x + 15, this.y + 30);
-        ctx.drawImage(this.enemyType, this.frameX * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height);
+        contxt.fillStyle = 'black';
+        contxt.font = '30px Orbitron';
+        contxt.fillText(Math.floor(this.health), this.x + 15, this.y + 30);
+        contxt.drawImage(this.enemyType, this.frameX * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height);
     }
 }
 function handleEnemies(){
@@ -336,11 +336,11 @@ class Resource {
         this.amount = amounts[Math.floor(Math.random() * amounts.length)];
     }
     draw(){
-        ctx.fillStyle = 'yellow';
-        ctx.fillRect(this.x, this.y, this.width, this.height);
-        ctx.fillStyle = 'black';
-        ctx.font = '20px Orbitron';
-        ctx.fillText(this.amount, this.x + 15, this.y + 25);
+        contxt.fillStyle = 'yellow';
+        contxt.fillRect(this.x, this.y, this.width, this.height);
+        contxt.fillStyle = 'black';
+        contxt.font = '20px Orbitron';
+        contxt.fillText(this.amount, this.x + 15, this.y + 25);
     }
 }
 function handleResources(){
@@ -359,28 +359,28 @@ function handleResources(){
 
 // utilities
 function handleGameStatus(){
-    ctx.fillStyle = 'gold';
-    ctx.font = '30px Orbitron';
-    ctx.fillText('Score: ' + score, 180, 40);
-    ctx.fillText('Resources: ' + numberOfResources, 180, 80);
+    contxt.fillStyle = 'gold';
+    contxt.font = '30px Orbitron';
+    contxt.fillText('Score: ' + score, 180, 40);
+    contxt.fillText('Resources: ' + numberOfResources, 180, 80);
     if (gameOver){
-        ctx.fillStyle = 'black';
-        ctx.font = '90px Orbitron';
-        ctx.fillText('GAME OVER', 135, 330);
+        contxt.fillStyle = 'black';
+        contxt.font = '90px Orbitron';
+        contxt.fillText('GAME OVER', 135, 330);
     }
     if (score >= winningScore && enemies.length === 0){
-        ctx.fillStyle = 'black';
-        ctx.font = '60px Orbitron';
-        ctx.fillText('LEVEL COMPLETE', 130, 300);
-        ctx.font = '30px Orbitron';
-        ctx.fillText('You win with ' + score + ' points!', 134, 340);
+        contxt.fillStyle = 'black';
+        contxt.font = '60px Orbitron';
+        contxt.fillText('LEVEL COMPLETE', 130, 300);
+        contxt.font = '30px Orbitron';
+        contxt.fillText('You win with ' + score + ' points!', 134, 340);
     }
 }
 
 function animate(){
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = 'black';
-    ctx.fillRect(0,0,controlsBar.width, controlsBar.height);
+    contxt.clearRect(0, 0, canvas.width, canvas.height);
+    contxt.fillStyle = 'black';
+    contxt.fillRect(0,0,controlsBar.width, controlsBar.height);
     handleGameGrid();
     handleDefenders();
     handleResources();

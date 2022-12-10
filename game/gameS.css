@@ -12,4 +12,6 @@ body {
     background-image: url('example.png');
     background-position: center bottom;
     background-size: contain;
+    border-style: double;
+    border-color: #ff5700;
 }

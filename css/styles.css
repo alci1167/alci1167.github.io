@@ -1,35 +1,45 @@
 body {
-    background-color: #edf2f4;
+    background-image: url('/img/robin-glauser-zP7X_B86xOg-unsplash.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
     color: black;
     font-family: montserrat, sans-serif;
     font-weight: 300;
     font-style: normal;
-    margin: 0;
+    margin: auto;
 }
 
 main {
-    background: #ff9907;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    height: auto;
+    background-color: #FF9907;
+    border-style: double;
+    border-color: #ff5700;
+    color: #edf2f4;
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 980px;
 
 }
 
-h1{
+h1 {
     font-family: nasalization, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5;
+    background-color:#FF9907;
+    width:75%;
+    margin: auto;
+    text-align: center;
+
 }
 
-h3{
+h3 { 
     font-family: nasalization, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.25;
     color: #3F7D20;
 }
+
 
 
 nav {
@@ -39,7 +49,7 @@ nav {
     top: 0;
 }
 
-nav a{
+nav a {
     color: #edf2f4;
     text-decoration: none;
     padding: .5em 1em;
@@ -55,7 +65,10 @@ nav a{
     }
 }
 
-.flex{
+.gameDes{
+    margin-top: 500px;
+}
+.flex { 
 
     display: flex;
     flex-flow: column wrap;
@@ -63,14 +76,20 @@ nav a{
 
 }
 
-.aboutflex{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+
+
+.aboutflex {
+    background-color: #FF9907;
+    border-style: double;
+    border-color: #ff5700;
+    color: #edf2f4;
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 980px;
 }
 
 
-.aboutflex1{
+.aboutflex1 {
     width: 100%;
     max-width: 600px;
     height: auto;
@@ -96,7 +115,7 @@ p{
     margin: 30px;
 }
 
-.workgrid{
+.workgrid {
     grid-area: auto;
     margin: 0 auto;
     padding: 20px 20px;
@@ -107,7 +126,7 @@ p{
 }
 
 
-.othermain{
+.othermain {
     background-color: #FF9907;
     border-style: double;
     border-color: #ff5700;
@@ -149,12 +168,12 @@ p{
     text-align: center;
 }
 
-.links:hover{
+.links:hover {
     color: #ff9907;
     text-decoration: underline;
 }
 
-.links:visited{
+.links:visited {
     color: #ff5700;
     text-decoration: none;
 }
@@ -169,15 +188,15 @@ hr {
     border: 2px solid #72b01d;
 }
 
-.feature{
+.feature {
     width: 300px;
 }
 
-.indeximgs1{
+.indeximgs1 {
     width: 425px;
 }
 
-.indeximgs2{
+.indeximgs2 {
     width: 300px;
 }
 
