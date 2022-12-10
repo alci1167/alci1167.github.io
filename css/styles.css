@@ -7,6 +7,15 @@ body {
     margin: 0;
 }
 
+main {
+    background: #ff9907;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    height: auto;
+
+}
+
 h1{
     font-family: nasalization, sans-serif;
     font-weight: 400;
