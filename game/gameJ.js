@@ -91,7 +91,7 @@ class Projectile {
         this.x += this.speed;
     }
     draw(){
-        contxt.fillStyle = 'black';
+        contxt.fillStyle = 'orange';
         contxt.beginPath();
         contxt.arc(this.x, this.y, this.width, 0, Math.PI * 2);
         contxt.fill();
@@ -294,7 +294,7 @@ class Enemy {
     draw(){
         //ctx.fillStyle = 'red';
         //ctx.fillRect(this.x, this.y, this.width, this.height);
-        contxt.fillStyle = 'black';
+        contxt.fillStyle = 'white';
         contxt.font = '30px Orbitron';
         contxt.fillText(Math.floor(this.health), this.x + 15, this.y + 30);
         contxt.drawImage(this.enemyType, this.frameX * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height);
@@ -364,7 +364,7 @@ function handleGameStatus(){
     contxt.fillText('Score: ' + score, 180, 40);
     contxt.fillText('Resources: ' + numberOfResources, 180, 80);
     if (gameOver){
-        contxt.fillStyle = 'black';
+        contxt.fillStyle = 'gold';
         contxt.font = '90px Orbitron';
         contxt.fillText('GAME OVER', 135, 330);
     }
