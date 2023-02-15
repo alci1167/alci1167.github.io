@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alexis Cisneros</title>
+        <link rel="stylesheet" href="https://use.typekit.net/vpy3zgm.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <h1>Object</h1>
+        <nav> 
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="work.html">Work</a>
+                </li>
+                <li>
+                    <a href="other.html">Other</a>
+                </li>
+                <li>
+                    <a href="/game/game.html">Game</a>
+                </li>               
+                <li>
+                    <a href="objectLab2.html">Object</a>
+                </li>
+            </ul>
+        </nav>
+        <main class>
+            <div>
+                <h3>Lab 2: Digital IO</h3>
+                <h4>DESCRIPTION </h4>
+                <p>This lab is an introduction to the Arduino, its Integrated Development Environment (IDE), and digital I/O on the Arduino.
+                    We will set up the workflow of programming an Arduino and learn about how to manipulate and sense its digital pins.</p>
+                <h4>MATERIALS</h4>
+                <ul>
+                    <li>
+                        <a>Arduino (Elegoo) Uno R3 Controller Board</a>
+                    </li>
+                    <li>
+                        <a>USB Cable</a>
+                    </li>
+                    <li>
+                        <a>Button</a>
+                    </li>
+                    <li>
+                        <a>830 Tie-Points Breadboard</a>
+                    </li>
+                    <li>
+                        <a>Breadboard Jumper Wire</a>
+                    </li>
+                    <li>
+                        <a>Resistors</a>
+                    </li>
+                    <li>
+                        <a>LEDs</a>
+                    </li>
+                    <li>
+                        <a>Multimeter</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h4>PART 1: SETTING UP THE ARDUINO IDE</h4>
+            <p>We will be using the Arduino microcontroller board, and we will be programming it using the Arduino IDE. 
+                Using the IDE, we will write and upload code to the Arduino board. The first thing we are going to do is run the Blink example file.</p>
+            <div id="images">
+                <video width="320" height="240" class="feature" controls>
+                    <source src="/img/Blink.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <h4>PART 2: BLINKING AN EXTERNAL LED</h4>
+            <p>Since We can control Arduino pins to output a certain voltage, we can use it to control an LED.
+                We can take an LED and a resistor and connect them to the Arduino such that the LED is powered by the digital pin 10. We can do this by changing what pin we output to.</p>
+            <div id = "images">
+                <video width="320" height="240" class="feature" controls>
+                    <source src="/img/ledblinking.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+            <h4 class="delay">500ms Delay</h4>
+            <p class="delay">Here I changed the delay from 1000ms to 500ms.</p>
+            <div id = "images">
+                <video width="320" height="240" class="feature" controls>
+                    <source src="/img/ledblinking2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+            <h4>PART 3: BUTTON PRESS AND SERIAL MONITOR</h4>
+            <p>Similar to how we set up a digital pin to be an OUTPUT in the previous part, we can also set one up to be an INPUT.
+                This means that we will be able to detect whether the pin has HIGH or LOW voltage. 
+                We can push a button connected to a digital input with a resistor to ground and add this to circuit to the LED circuit.</p>
+            <div id = "images">
+                <video width="320" height="240" class="feature" controls>
+                    <source src="/img/Button 1 3.3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="/img/button3.3.jpg" alt="placeholder" class="feature">
+            </div>
+
+            <h4>EXTRA VOLT </h4>
+            <p>This is the opposite of part 2. We can achieve this by putting the LED and the button in parallel. The image and video below shows the schemtic and circuit.</p>
+            <div id = "images">
+                <video width="320" height="240" class="feature" controls>
+                    <source src="/img/parallel button.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="/img/parallelbutton.jpg" alt="placeholder" class="feature">
+            </div>
+            
+            <h4>CONCLUSION </h4>
+            <p>The first lab went well. It was simple enough to get familiar with things. The only part we struggled with was with the breadboard. It was difficult to connect the LEDs and resistors, but I'm sure we will get the hang of it.</p>
+
+
+        </main>
+    </body>
+</html>
