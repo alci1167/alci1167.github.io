@@ -124,7 +124,21 @@
             <script src="https://gist.github.com/alci1167/a5ed0f9459ac9cef402c65b92bbecfe4.js"></script>
 
             <h4>PART 4: LED REACTION GAME</h4>
-            <p></p>
+            <p>This game helps us put everything we've learned together into one project. The game is an LED reaction game.
+                The LED connected to the Arduino will turn on after a random time interval, and then the player will need to press the button as soon as they notice the LED.
+                The output is the time that the player took to press the button, which can serve as a score to compare with other players. The program goes trough these steps:
+            </p>
+            <ol>
+                <li>The game begins with "Get ready to test your refelxes!" on the Serial Monitor.</li>
+                <li>The Arduino outputs a “ready” message on Serial, to prepare the player for the be prepared to press the button. </li>
+                <li>After the ready message, the Arduino waits for a random interval of time between 0.5s and 5s, and then turns on the LED.</li>
+                <li>The player sees the LED turn on, and presses the button as fast as they can.</li>
+                <li>Once the button is pressed, the LED turns off, and the Arduino outputs the time period the player
+                took to respond from the moment the LED went on to the moment when the button was pressed</li>
+                <li>This round is over. A delay of 5s starts after each round to make the player prepared for the next round. After 5s, the next round begins.
+                </li>
+              </ol>
+              
             <div id = "images">
                 <video width="320" height="240" class="feature" controls>
                     <source src="/img/Game.mp4" type="video/mp4">
