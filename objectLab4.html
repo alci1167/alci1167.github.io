@@ -36,8 +36,9 @@
             <div>
                 <h3>Lab 4 - “Whack-A-MoLED”</h3>
                 <h4>DESCRIPTION </h4>
-                <p>In this lab we will learn how to solder. Soldering is a very useful electrical prototyping skill, which you will probably use in your labs and the final project.
-                </p>
+                <p>In this lab, we begin interacting with electrical circuits using analog input.
+                    We will learn how to use our Arduino to take analog measurements from components 
+                    like a potentiometer and an analog joystick, which is like a multi-dimensional potentiometer.</p>
                 <h4>MATERIALS</h4>
                 <ul>
                     <li>
@@ -45,9 +46,6 @@
                     </li>
                     <li>
                         <a>USB Cable</a>
-                    </li>
-                    <li>
-                        <a>Button</a>
                     </li>
                     <li>
                         <a>Breadboard Jumper Wire</a>
@@ -59,99 +57,101 @@
                         <a>LEDs</a>
                     </li>
                     <li>
+                        <a>Potentiometer 10k</a>
+                    </li>
+                    <li>
+                        <a>Joystick Module</a>
+                    </li>
+                    <li>
                         <a>Multimeter</a>
-                    </li>
-                    <li>
-                        <a>Protoboard (Not in the kit; provided)</a>
-                    </li>
-                    <li>
-                        <a>Stranded and Solid-core Wires (Not in the kit; provided)</a>
-                    </li>
-                    <li>
-                        <a>Soldering Iron (BTU)</a>
-                    </li>
-                    <li>
-                        <a>Solder Wire (Lead-free, rosin core) (BTU)</a>
-                    </li>
-                    <li>
-                        <a>Fume Extractor (BTU)</a>
-                    </li>
-                    <li>
-                        <a>Brass Wire Pad (BTU)</a>
-                    </li>
-                    <li>
-                        <a>Soldering Helping Hands (BTU)</a>
-                    </li>
-                    <li>
-                        <a>Solder Sucker Desoldering Pump (BTU)</a>
-                    </li>
-                    <li>
-                        <a>Solder Wick (BTU)</a>
-                    </li>
-                    <li>
-                        <a>Wire Stripper (BTU)</a>
-                    </li>
-                    <li>
-                        <a>Diagonal Pliers (BTU)</a>
-                    </li>
-                    <li>
-                        <a>Safety Glasses (BTU)</a>
                     </li>
                 </ul>
             </div>
-            <div id="images">
-                <img src="/img/supplies.JPEG" alt="placeholder" class="feature">
-            </div>
 
-            <h4>PART 1: SOLDERING SETUP AND SAFETY</h4>
-            <p>Before beginning soldering, assemble all of these tools on your soldering station.The appropriate temperature for soldering is between 600 ℉ - 700 ℉ (325 ℃ - 375 ℃),
-                 so ensure that the number on the screen that represents the current temperature of the iron is within this range. There are certain safety steps and precautions to take while soldering. These are:</p>
-                 <ol>
-                    <li>
-                        <a>Make sure that you always grab the soldering iron using the handle and not the front metal part.</a>
-                    </li>
-                    <li>
-                        <a>Never keep the soldering iron outside its stand; dont put it directly on the table or on some other surface.</a>
-                    </li>
-                    <li>
-                        <a>Once the soldering iron is turned on, turn on the fume extractor fan.</a>
-                    </li>
-                    <li>
-                        <a>Always remember to wash your hands with soap and water after soldering.</a>
-                    </li>
-                    <li>
-                        <a>Always wear safety glasses while soldering to protect your eyes.</a>
-                    </li>
-                </ol>
+            <h4>PART 1: USING A POTENTIOMETER</h4>
+            <p>
+                We will be using a potentiometer as a way to provide analog input to the Arduino.
+                A potentiometer is a type of variable resistor that we can rotate or slide to provide a range of analog inputs to the Arduino.
+                Since we are now measuring analog signals, we need to use one of the analog-enabled pins on the Arduino for measurement,
+                which are labeled as A0-A5 on one side of our Arduino Uno board.
+            </p>
             <div id="images">
                 <img src="/img/ironTip.jpg" alt="placeholder" class="feature">
             </div>
 
-            <h4>PART 2: SOLDERING WIRES TO PROTOBOARD</h4>
-            <p>We will be using a Protoboard, which is used for electrical prototyping like a breadboard, but it can be soldered on.
-                In this part of the lab we will be soldering wires to the protoboard. We will be using two types of wires: solid-core, and stranded.
-                After turning the soldering iron on and getting it heated, we need to tin and clean the iron. We can now move on to stripping 2mm off the ends of our solid ann stranded wire.
-                We can now solder the wires to the protoboard.
+            <p>
+                We can perform measurements with the analog pins on the Arduino using the analogRead() function.
+                Using this we can create an Arduino sketch that continuously prints the analog value of the potentiometer on the serial monitor.
             </p>
+
+            <h4>PART 2: LIGHT 'EM UP WITH A POTENTIOMETER</h4>
+            <p>
+                In this part of the lab, we are going to use the potentiometer to create an interactive LED visualization.
+                We can take 5 LEDs and arrange the linearly on the breadboard. The LEDs need to be set up tp be 
+                individually digitally controlled using the digital I/O pins.
+            </p>
+
+            <p>
+
+            </p>
+
+            <p>
+                We can Create a sketch such that no LEDs are turned on if the potentiometer is turned all the way to the left.
+                As we slightly rotate the knob, one LED turns on. If we rotate it a little more, two LEDs turn on, and so on, until all the 5 LEDs are
+                turned on when the potentiometer is dialed all the way to the other side.
+            </p>
+
             <div id = "images">
                 <img src="/img/3wires.JPEG" alt="placeholder" class="feature">
             </div>
-            <p>The solid-core wire was much easier to solder. The stranded wire was much more flimsy and the wires would move.</p>
 
-            <h4>PART 3: BRIDGE OF SOLDER</h4>
-            <p>A solder bridge is when we connect two adjacent holes on a protoboard using solder.
-                We will connect the four joints we made in the previous part to each other by trace soldering.
+            <h4>PART 3: JOYSTICK FOR ARDUINO</h4>
+            <p>
+                After working with a potentiometer, we can now move on to an analog joystick. This joystick is simply two potentiometers and a push button combined into one.
+                We can connect the joystick to the Arduino through the breadboard.
             </p>
+
+            <p>
+                Now that we have connected the joystick to the Arduino, we can read its exact position.
+                We will read the analog value of both the potentiometers in the joystick (x and y), 
+                and print their values (labeled based on X or Y) to the serial monitor. 
+            </p>
+
+            <p>
+                What are the average values of both x and y directions when the joystick is centered (home position)?
+            </p>
+
+            <p>
+                What are the values when the joystick is moved all the way to the left? The right? Up? Down?
+            </p>
+
+            <p>
+                What about the four diagonally extreme positions?
+            </p>
+
             <div id="images">
                 <img src="/img/bridges.jpg" alt="placeholder" class="feature">
             </div>
 
-            <h4>PART 4: SPLICING WIRES</h4>
-            <p>For this part of the lab, we will splice the 4 pieces of wires to each other in order to make a longer (8-inch) piece of wire with three splice joints.</p>
+            <h4>PART 4: LIGHT 'EM UP WITH A JOYSTICK</h4>
+            <p>
+                In this part of the lab, we will add another dimension to the LED visualization from part 2.
+                We will use the joystick to light up the different LEDs. We can rearrange the 5 LEDs on the breadboard into a 'plus (+)' layout. 
+            </p>
+
+            <p>
+                Taking this further, we want to program the Arduino to control which LEDs get turned on based on the input from the joystick. 
+            </p>
+
             <div id="images">
                 <img src="/img/connectedwire.jpg" alt="placeholder" class="feature">
             </div>
             
+            <h4>PART 5: BASIC LED WHACK-A-MOLE</h4>
+            <p>
+                In this part of the lab, we will use the joystick and the plus-arrangement of the LEDs to create a simple whack-a-mole game.
+            </p>
+
             <h4>CONCLUSION </h4>
             <p>This lab was fun for me. I had some experience with soldering before, but not much. The hardest part was the bridging. 
                 I was having a hard time geting the joints to connect. Overall it was an educational lab that helped be do some basic solering. 
