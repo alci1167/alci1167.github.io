@@ -54,7 +54,6 @@ h1 {
 
 }
 
-
 h3 { 
     font-family: nasalization, sans-serif;
     font-weight: 400;
@@ -71,7 +70,6 @@ h4 {
     font-size: 1;
     color:  #ff5700;
 }
-
 
 nav {
     background-color: #72b01d;
@@ -109,8 +107,6 @@ nav a {
 
 }
 
-
-
 .aboutflex {
     background-color: #FF9907;
     border-style: double;
@@ -121,7 +117,6 @@ nav a {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .aboutflex1 {
     width: 40%;
@@ -162,7 +157,6 @@ p{
     grid-template-columns: auto auto;
     align-content: center;
 }
-
 
 .othermain {
     background-color: #FF9907;
@@ -228,14 +222,23 @@ hr {
 }
 
 .feature {
-    width: 300px;
+    width: 500px;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 50px;
+
 }
 
 #images {
     text-align:center;
+}
+
+#positions {
+    margin-left: 325px;
+    margin-right: 75px;
+    padding-bottom: 50px;
+
 }
 
 .indeximgs1 {
