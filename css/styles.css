@@ -228,10 +228,12 @@ hr {
 }
 
 .feature {
-    width: 300px;
+    width: 500px;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 50px;
+
 }
 
 #images {
