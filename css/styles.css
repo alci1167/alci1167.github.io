@@ -221,6 +221,7 @@ hr {
     border: 2px solid #72b01d;
 }
 
+
 .feature {
     width: 500px;
     display: inline-block;
@@ -259,4 +260,5 @@ hr {
         flex-direction: column;
     }
 
-  }
+}
+
