@@ -74,146 +74,38 @@
 
             </p>
 
-
-            <div id="images">
-                <img src="/img/lab4/pot.jpg" alt="placeholder" class="feature" style="width: 28.25%">
-                <img src="/img/lab4/potSetup.jpg" alt="placeholder" class="feature">
-
-            </div>
-
             <p>
-                We can perform measurements with the analog pins on the Arduino using the analogRead() function.
-                Using this we can create an Arduino sketch that continuously prints the analog value of the potentiometer on the serial monitor.
+                Using analogWrite(), we can create a new Arduino sketch to control the brightness of the R, G, and B LEDs inside the RGB LED to produce different colors.
             </p>
 
-            <div id = "images">
-                <video width="520" height="440" class="feature" controls>
-                    <source src="/img/lab4/potD.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-            </div>
-
-            <script src="https://gist.github.com/alci1167/67789c061ee7b4c2e22301e5c0122e58.js"></script>
-
-            <h4>PART 2: LIGHT 'EM UP WITH A POTENTIOMETER</h4>
+            <h4>PART 2: DYNAMIC COLOR CHANGER WITH JOYSTICK</h4>
             <p>
-                In this part of the lab, we are going to use the potentiometer to create an interactive LED visualization.
-                We can take 5 LEDs and arrange the linearly on the breadboard. The LEDs need to be set up tp be 
-                individually digitally controlled using the digital I/O pins.
+                In this part, we will use the analog joystick to change the colors produced on the RGB LED. We will connect the joystick to the Arduino as we did in the previous lab.
+                Since the joystick has two potentiometers for the x and y directions, we can map the two potentiometer values along the two axes to two of the three colors in the RGB color space. 
             </p>
 
-            <div id="images">
-                <img src="/img/lab4/potLights.jpg" alt="placeholder" class="feature">
-            </div>
-
+            <h4>PART 3: MUSICAL NOTES WITH PASSIVE BUZZER</h4>
             <p>
-                For the y range we can use 0,5 because of the different LEDs we have. We can use the number of LEDs we have to split the x range values to turn on different LEDs. 
+                In this part of the lab, we will be using the passive buzzer to generate different sounds. We need to note that the buzzer has polarity, so we need to make sure 
+                that we plug the positive to positive and negative to negative or we will damage it. We will connect the passive buzzer to the Arduino such that the positive terminal 
+                (with the + icon) is wired to a digital pin and the negative terminal is connected to the ground.
             </p>
 
             <p>
-                We can Create a sketch such that no LEDs are turned on if the potentiometer is turned all the way to the left.
-                As we slightly rotate the knob, one LED turns on. If we rotate it a little more, two LEDs turn on, and so on, until all the 5 LEDs are
-                turned on when the potentiometer is dialed all the way to the other side.
+                To produce sound from our buzzer, we will be using the tone() function. We can create a simple Arduino sketch which plays a beep of frequency 440 Hz on the buzzer for 1 second,
+                stops for 1 second, and then plays the beep again repeatedly.
             </p>
-
-            <div id = "images">
-                <video width="520" height="440" class="feature" controls>
-                    <source src="/img/lab4/5lights.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-            </div>
-
-            <script src="https://gist.github.com/alci1167/2eafe3ae7e78a1e4350ce86bdf8368a8.js"></script>
-
-            <h4>PART 3: JOYSTICK FOR ARDUINO</h4>
-            <p>
-                After working with a potentiometer, we can now move on to an analog joystick. This joystick is simply two potentiometers and a push button combined into one.
-                We can connect the joystick to the Arduino through the breadboard.
-            </p>
-
-            <div id="images">
-                <img src="/img/lab4/joystickSetup.jpg" alt="placeholder" class="feature">
-            </div>
-
-            <p>
-                Now that we have connected the joystick to the Arduino, we can read its exact position.
-                We will read the analog value of both the potentiometers in the joystick (x and y), 
-                and print their values (labeled based on X or Y) to the serial monitor. 
-            </p>
-
-            <div id = "images">
-                <video width="520" height="440" class="feature" controls>
-                    <source src="/img/lab4/joystickC.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-            </div>
-
-            <div id = "positions">
-                <p>Values of each position (x,y):</p>
-                <ul>
-                    <li>
-                        <a>Home: 508, 512</a>
-                    </li>
-                    <li>
-                        <a>Top: 508, 0</a>
-                    </li>
-                    <li>
-                        <a>Bottom: 508, 1023</a>
-                    </li>
-                    <li>
-                        <a>Right: 1023, 512</a>
-                    </li>
-                    <li>
-                        <a>Left: 0, 512</a>
-                    </li>
-                    <li>
-                        <a>Top-Right: 1023, 0</a>
-                    </li>
-                    <li>
-                        <a>Top-Left: 0, 0</a>
-                    </li>
-                    <li>
-                        <a>Bottom-Right: 1023, 1023</a>
-                    </li>
-                    <li>
-                        <a>Bottom-Left: 0, 1023</a>
-                    </li>
-                </ul>
-            </div>
-
-            <script src="https://gist.github.com/alci1167/24e0f7033d7d5cc424b13d2e9f6ba43a.js"></script>
 
             <h4>PART 4: LIGHT 'EM UP WITH A JOYSTICK</h4>
-            <p>
-                In this part of the lab, we will add another dimension to the LED visualization from part 2.
-                We will use the joystick to light up the different LEDs. We can rearrange the 5 LEDs on the breadboard into a 'plus (+)' layout. 
-            </p>
-
-            <div id="images">
-                <img src="/img/lab4/joystickLights.jpg" alt="placeholder" class="feature">
-            </div>
 
             <p>
-                Taking this further, we want to program the Arduino to control which LEDs get turned on based on the input from the joystick. 
+                After playing an individual musical note on the buzzer, we can use it to play an entire melody of a song. Using the table in the lab that
+                shows the sequence of the notes in the melody, as well as the type of note and whether it is dotted or not, we can write an Arduino sketch that plays this melody on the passive buzzer.
             </p>
-            
-            <div id = "images">
-                <video width="520" height="440" class="feature" controls>
-                    <source src="/img/lab4/joyCross.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-            </div>
 
-            <script src="https://gist.github.com/alci1167/3fab9c965611002a8a9b5375138429ea.js"></script>
-            
-            <h4>PART 5: BASIC LED WHACK-A-MOLE</h4>
             <p>
-                In this part of the lab, we will use the joystick and the plus-arrangement of the LEDs to create a simple whack-a-mole game.
+                After playing a melody on the buzzer, we can create our own melody and play it. We can create a melody similar to the one above, with at least 10 notes. 
             </p>
-
-            <div id = "images">
-                <video width="520" height="440" class="feature" controls>
-                    <source src="/img/lab4/wackM.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-            </div>
-
-            <script src="https://gist.github.com/alci1167/019c4e62fb7b80577ae32953d2e08292.js"></script>
 
             <h4>CONCLUSION </h4>
             <p>
