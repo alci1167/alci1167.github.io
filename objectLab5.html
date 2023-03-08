@@ -70,19 +70,40 @@
             <h4>PART 1: WIRING UP THE RGB LED</h4>
             <p>
                 In the first part of the lab, we will connect the RGB LED from our kits to the Arduino. An RGB LED is a red, a green, and a blue LED put together in one.
-                In the RGB LED the longest leg is for ground, which is also the second pin from the flat side of the LED bulb. We can use a  resistor.
-
+                In the RGB LED the longest leg is for ground, which is also the second pin from the flat side of the LED bulb. We can use a 220 ohm resistor for each color, so three 220 ohm resistors in total.
             </p>
+            <div id="images">
+                <img src="/img/lab5/rgbLEDcircuit1b.jpg" alt="placeholder" class="feature" style="width: 31.95%">
+                <img src="/img/lab5/rgbLEDcircuit1.jpg" alt="placeholder" class="feature">
+            </div>
 
             <p>
                 Using analogWrite(), we can create a new Arduino sketch to control the brightness of the R, G, and B LEDs inside the RGB LED to produce different colors.
             </p>
+
+            <div id="images">
+                <img src="/img/lab5/cyanRGB.jpg" alt="placeholder" class="feature" style="width: 40%">
+                <img src="/img/lab5/redRGB.jpg" alt="placeholder" class="feature" style="width: 40%">
+                <img src="/img/lab5/violetRGB.jpg" alt="placeholder" class="feature" style="width:40%">
+                <img src="/img/lab5/greenRGB.jpg" alt="placeholder" class="feature" style="width: 40%">
+            </div>
+
+
+            <script src="https://gist.github.com/alci1167/4278ffbac8c856476aac5a1901a85b60.js"></script>
 
             <h4>PART 2: DYNAMIC COLOR CHANGER WITH JOYSTICK</h4>
             <p>
                 In this part, we will use the analog joystick to change the colors produced on the RGB LED. We will connect the joystick to the Arduino as we did in the previous lab.
                 Since the joystick has two potentiometers for the x and y directions, we can map the two potentiometer values along the two axes to two of the three colors in the RGB color space. 
             </p>
+
+            <div id = "images">
+                <video width="520" height="440" class="feature" controls>
+                    <source src="/img/lab5/joystickRGBVid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+            <script src="https://gist.github.com/alci1167/8a671c0202752a7258e10789d71b1120.js"></script>
 
             <h4>PART 3: MUSICAL NOTES WITH PASSIVE BUZZER</h4>
             <p>
