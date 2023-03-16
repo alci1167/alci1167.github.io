@@ -146,11 +146,44 @@
 
             <script src="https://gist.github.com/alci1167/7672a1237efe2dc44ef68b2ffac4fb54.js"></script>
 
+            <p>
+                We can modify the previous code such that based on the input from the potentiometer, the delay period changes from 5ms to 50ms, which would be changing the speed of the servo.
+            </p>
+
+            <div id = "images">
+                <video width="520" height="440" class="feature" controls>
+                    <source src="/img/lab6/potServoSpeed.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+            <script src="https://gist.github.com/alci1167/7606ce0c39fc669d8cc7554936917387.js"></script>
+
             <h4>PART 3: DC MOTOR AND MOTOR DRIVER</h4>
 
             <p>
-
+                We can also use a DC motor. The DC motor in our kit is a small brushed DC motor. This motor can be fast enough to run a small fan.
             </p>
+
+
+            <div id = "images">
+                <img src="/img/lab6/DCsetup.jpg" alt="placeholder" class="feature" style="width: 47.5%">
+                <video style="width: 47.5%" class="feature" controls>
+                    <source src="/img/lab6/DCfan.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+            <p>
+                If we want to not only control whether the motor is on or not, but also its direction we need to use a motor driver.
+                A motor driver is an Integrated Circuit (IC) that allows bidirectional control of motors with the help of transistors.
+                In our kits, we have the L293D chip, which is a dual-channel motor driver that can control up to two motors.
+                we can connect the L293D chip to our Arduino and the motor.
+            </p>
+
+            <div id="images">
+                <img src="/img/lab6/ICDCsetup.jpg" alt="placeholder" class="feature">
+            </div>
+
+
 
             <h4>PART 4: TABLE-TOP FAN</h4>
 
