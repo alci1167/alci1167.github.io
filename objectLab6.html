@@ -85,14 +85,34 @@
 
             <h4>PART 0: SETTING UP POWER</h4>
             <p>
-                We will be using the 9V battery along with the power supply module from our kit to power the motors we use in this lab. 
+                Trying to power motors from the Arduino can burn out the Arduino pins, and sometimes even the USB port on your computer.
+                So we will be using the 9V battery along with the power supply module from our kit to power the motors we use in this lab. 
             </p>
+
+            <div id="images">
+            <img src="/img/lab6/pSupplymod.jpg" alt="placeholder" class="feature">
+            </div>
 
             <h4>PART 1: WIRING THE SERVO</h4>
             <p>
-                
+                In the first part of this lab, we will connect the servo motor from our kits to the Arduino.
+                After we set up the motor power using the power supply module, we can connect the power and ground to the 5V rails.
+                The signal line of the servo should connect to a PWM pin on the Arduino. The PWM pins are the pins with a tilde or pins 11, 10, 9, 6, 5, and 3.
             </p>
 
+            <div id="images">
+                <img src="/img/lab6/servoSetup.jpg" alt="placeholder" class="feature">
+            </div>
+
+            <p>
+                Now that we have wired the servo, we can test it out. We do not need to use the usual analogWrite() function to send this PWM.
+                There is a built-in Arduino library to control the servos, called "Servo.h". The "Servo.h" library comes pre-installed with most Arduino IDE installations.
+                This is a screenshot showing the "Servo.h" library is installed.
+            </p>
+
+            <div id="images">
+                <img src="/img/lab6/servoLibrarySS.jpg" alt="placeholder" class="feature">
+            </div>
 
             <h4>PART 2: CONTROLLING THE SERVO</h4>
             <p>
