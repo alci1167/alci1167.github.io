@@ -111,13 +111,40 @@
             </p>
 
             <div id="images">
-                <img src="/img/lab6/servoLibrarySS.jpg" alt="placeholder" class="feature">
+                <img src="/img/lab6/servoLibrarySS.jpg" alt="placeholder" class="feature" style="width: 80%">
+            </div>
+
+            <p>
+                Now that we have set up the Servo library, we can go ahead and try out a sample code to move the servo.
+                The code we will be using is a sample code called “Sweep” from the Arduino website, which simply moves the servo from 0° to 180°, and then back from 180° to 0°. 
+            </p>
+
+            <div id = "images">
+                <video width="520" height="440" class="feature" controls>
+                    <source src="/img/lab6/sweepServo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
             </div>
 
             <h4>PART 2: CONTROLLING THE SERVO</h4>
             <p>
-                
+                In this part of the lab, we will try to control the movement of the servo using a potentiometer. We will connect the potentiometer to the Arduino like we did in previous labs.
             </p>
+
+            <div id="images">
+                <img src="/img/lab6/potServoSetup.jpg" alt="placeholder" class="feature">
+            </div>
+
+            <p>
+                We can use the map() function to convert the analog potentiometer reading into an angle value and  move the servo in sync with the potentiometer. 
+            </p>
+
+            <div id = "images">
+                <video width="520" height="440" class="feature" controls>
+                    <source src="/img/lab6/potServoV.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+            <script src="https://gist.github.com/alci1167/7672a1237efe2dc44ef68b2ffac4fb54.js"></script>
 
             <h4>PART 3: DC MOTOR AND MOTOR DRIVER</h4>
 
