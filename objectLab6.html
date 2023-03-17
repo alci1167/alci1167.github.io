@@ -183,6 +183,45 @@
                 <img src="/img/lab6/ICDCsetup.jpg" alt="placeholder" class="feature">
             </div>
 
+            <p>
+                Now that we have connected the Arduino, the motor, and the motor driver all together, we can try it out.
+                Based on the L293D functionality described in Table 1, we can write code that:
+            </p>
+
+            <ol>
+                <li>
+                    Turns the motor forward at full speed for 2 seconds.
+                </li>
+                <li>
+                    Stops for 1 second.
+                </li>
+                <li>
+                    Turns the motor backward at full speed for 2 seconds.
+                </li>
+                <li>
+                    Stops for 1 second. Goes back to 1.
+                </li>
+            </ol>
+
+            <div id = "images">
+                <video width="520" height="440" class="feature" controls>
+                    <source src="/img/lab6/ICDCfan.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+            <script src="https://gist.github.com/alci1167/384829c436da4b69921dcd05f2c5d980.js"></script>
+
+            <p>
+                The L293D motor driver also allows us to control the speed of the motor in either direction with the help of PWM.  
+            </p>
+
+            <div id = "images">
+                <video width="520" height="440" class="feature" controls>
+                    <source src="/img/lab6/ICfanSpeed.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+            <script src="https://gist.github.com/alci1167/ccc6fea58bd04a3b4aff3adc1f1cdd32.js"></script>
 
 
             <h4>PART 4: TABLE-TOP FAN</h4>
