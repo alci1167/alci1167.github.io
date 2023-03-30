@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alexis Cisneros</title>
+        <link rel="stylesheet" href="https://use.typekit.net/vpy3zgm.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <h1>Object</h1>
+        <nav> 
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="work.html">Work</a>
+                </li>
+                <li>
+                    <a href="other.html">Other</a>
+                </li>
+                <li>
+                    <a href="/game/game.html">Game</a>
+                </li>               
+                <li>
+                    <a href="objectLab7.html">Object</a>
+                </li>
+            </ul>
+        </nav>
+        <main class>
+            <div>
+                <h3>Lab 7 - “Trust the Process-ing”</h3>
+                <h4>DESCRIPTION </h4>
+
+                <p>
+                    In this lab we will learn how to create interactive animations and visualizations on our computers using Processing, 
+                    and then connect them to the Arduino to control them using electronics
+                </p>
+
+                <h4>MATERIALS</h4>
+                <ul>
+                    <li>
+                        <a>Arduino (Elegoo) Uno R3 Controller Board</a>
+                    </li>
+                    <li>
+                        <a>USB Cable</a>
+                    </li>
+                    <li>
+                        <a>Breadboard Jumper Wire</a>
+                    </li>
+                    <li>
+                        <a>Joystick</a>
+                    </li>
+                    <li>
+                        <a>Multimeter</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h4>PART 0: SETTING UP PROCESSING</h4>
+
+            <p>
+                We will begin by setting up Processing. We can go to the Downloads page of Processing at Processing.org and download the software for our operating system. 
+            </p>
+
+            <h4>PART 1: CREATING WITH PROCESSING</h4>
+
+            <p>
+                When we open Processing on our computer, it should have opened a PDE window with an empty Text Editor. 
+                In there we can use some sample code, and press the Run button on the top left of the PDE to run the program.
+            </p>
+
+            <p>
+                We can change the color and size of the ellipse drawn and see how it changes the behavior of the program.
+            </p>
+                
+            <h4>PART 2: PROCESSING WITH ARDUINO</h4>
+
+            <p>
+                In this part of the lab, we will first set up our Arduino to obtain data from the joystick, 
+                and then send it over to the Processing sketch such that we can control the circles using the joystick.
+            </p>
+
+            <p>
+                We will use the joystick module connected to the Arduino, along with its in-built push button which gets pressed when you press down on the joystick.
+                After connecting the joystick to the Arduino, we can write a sketch to read the X and Y positions of the joystick, and also whether the push button on the joystick is pressed.
+                Once we have read the three values of interest from the joystick (X position, Y position, and button), 
+                we can pack it together in a format that we can send over serial to be able to be read by Processing.
+            </p>
+
+            <p>
+                We can now move to writing the Processing sketch that will take these joystick values from the Arduino and update the animation.
+                In order to test the code, we first upload the Arduino sketch to the Arduino board. Then, while the board is connected to the computer, run the Processing sketch using the run button.
+            </p>
+
+            <h4>PART 3: CREATING YOUR OWN VISUALIZATION</h4>
+                
+            <p>
+                Now that we know how to use Processing with Arduino, we can design a new Arduino-controlled visualization ourselves.
+                We can create a complete interactive visualization on Processing that connects with the Arduino and is controlled by 3 input electronic components.
+            </p>
+
+            <h4>CONCLUSION </h4>
+
+        </main>
+    </body>
+</html>
