@@ -68,6 +68,10 @@
                 We will begin by setting up Processing. We can go to the Downloads page of Processing at Processing.org and download the software for our operating system. 
             </p>
 
+            <div id="images">
+                <img src="/img/lab7/processingWindow.jpg" alt="placeholder" class="feature">
+            </div>
+
             <h4>PART 1: CREATING WITH PROCESSING</h4>
 
             <p>
@@ -75,9 +79,24 @@
                 In there we can use some sample code, and press the Run button on the top left of the PDE to run the program.
             </p>
 
+            <div id = "images">
+                <video width="520" height="440" class="feature" controls>
+                    <source src="/img/lab7/sampleCircle.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
             <p>
-                We can change the color and size of the ellipse drawn and see how it changes the behavior of the program.
+                We can change the color and size of the ellipse drawn and see how it changes the behavior of the program. I chose to make the circle smaller and filled in orange.
             </p>
+
+            <div id = "images">
+                <video width="520" height="440" class="feature" controls>
+                    <source src="/img/lab7/sampleCircleOrange.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+            <script src="https://gist.github.com/alci1167/2df492f3ba09d0349598e32f4ec1dc81.js"></script>
+
                 
             <h4>PART 2: PROCESSING WITH ARDUINO</h4>
 
@@ -86,12 +105,25 @@
                 and then send it over to the Processing sketch such that we can control the circles using the joystick.
             </p>
 
+            <div id="images">
+                <img src="/img/lab7/jStickSetup.jpg" alt="placeholder" class="feature" >
+                <img src="/img/lab7/joyStickSU.jpg" alt="placeholder" class="feature" style="width: 35%">
+            </div>
+
             <p>
                 We will use the joystick module connected to the Arduino, along with its in-built push button which gets pressed when you press down on the joystick.
                 After connecting the joystick to the Arduino, we can write a sketch to read the X and Y positions of the joystick, and also whether the push button on the joystick is pressed.
                 Once we have read the three values of interest from the joystick (X position, Y position, and button), 
                 we can pack it together in a format that we can send over serial to be able to be read by Processing.
             </p>
+
+            <div id = "images">
+                <video width="520" height="440" class="feature" controls>
+                    <source src="/img/lab7/jStickClick.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+            <script src="https://gist.github.com/alci1167/4b42387618549c15f3070acb26a6b40c.js"></script>
 
             <p>
                 We can now move to writing the Processing sketch that will take these joystick values from the Arduino and update the animation.
