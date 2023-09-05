@@ -13,7 +13,6 @@ ol{
     margin-left: auto;
     margin-right: auto;
     width: 50%
-
 }
 
 main {
@@ -24,7 +23,6 @@ main {
     margin: 0 auto;
     padding: 20px 20px;
     max-width: 980px;
-
 }
 
 .slides { width: 100%; }
@@ -34,7 +32,13 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
+    border-style: double;
+    border-color: #ff5700;
+    background-color: #ff55008f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -51,7 +55,6 @@ h1 {
     margin: 0 auto;
     padding: 20px 20px;
     max-width: 980px;
-
 }
 
 h3 { 
@@ -61,6 +64,7 @@ h3 {
     font-size: 1.25;
     color: #3F7D20;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 h4 {
@@ -76,7 +80,6 @@ nav {
     padding: .5em;
     position: sticky;
     top: 0;   
-
 }
 
 nav a {
@@ -104,7 +107,6 @@ nav a {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-
 }
 
 .aboutflex {
@@ -143,6 +145,7 @@ nav ul {
 }
 
 p{
+    margin-top: 10px;
     font-size: 1em;
     margin-left: 75px;
     margin-right: 75px;
@@ -177,8 +180,7 @@ p{
     text-decoration: none;
     background-color: #72b01d;
     color: #edf2f4; 
-    margin: auto;
-    
+    margin: auto;  
 }
   
 .button:hover {
@@ -228,7 +230,6 @@ hr {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
-
 }
 
 #images {
@@ -239,7 +240,6 @@ hr {
     margin-left: 325px;
     margin-right: 75px;
     padding-bottom: 50px;
-
 }
 
 .indeximgs1 {
@@ -252,13 +252,11 @@ hr {
 
 .delay{
     text-align:center;
-
 }
 
 @media screen and (max-width: 400px) {
     main, nav ul {
         flex-direction: column;
     }
-
 }
 
