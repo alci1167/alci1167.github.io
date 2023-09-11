@@ -76,6 +76,14 @@ h4 {
     color:  #ff5700;
 }
 
+h5 {
+    font-family: nasalization, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1;
+    color:  #edf2f4;
+}
+
 nav {
     background-color: #72b01d;
     padding: .5em;
