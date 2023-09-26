@@ -9,6 +9,14 @@ body {
     margin: auto;
 }
 
+a:link {
+    color: #3F7D20;
+}
+
+a:visited {
+    color: #3F7D20;
+  }
+
 
 ol{
     margin-left: auto;
