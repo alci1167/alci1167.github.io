@@ -241,6 +241,13 @@ hr {
     border: 2px solid #72b01d;
 }
 
+table, th, td {
+    text-align:center;
+    border:1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
 .feature {
     width: 500px;
