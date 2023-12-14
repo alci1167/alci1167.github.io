@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alexis Cisneros</title>
+        <link rel="stylesheet" href="https://use.typekit.net/vpy3zgm.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <h1 style = "text-align:center;">Computational Fabrication Documentation Blog</h1>
+        <nav> 
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="work.html">Work</a>
+                </li>
+                <li>
+                    <a href="featuredprojects.html">Featured Projects</a>
+                </li>
+                <li>
+                    <a href="/game/game.html">Game</a>
+                </li>               
+            </ul>
+        </nav>
+        <main class="aboutflex">
+            <h3>Final project documentation</h3>
+
+            <p>
+                The structural integrity of old furniture may be the main reason why it is discarded. 
+                Replacement of structural components with 3D printed parts is a common solution. 
+                Topology optimized 3D printed parts can provide the same functionality with less material. 
+            </p>
+
+            <p>
+                Image of chair I will be using. It is very worn down and was in my parents backyard made of metal. 
+                I will be cutting off some parts of the chair and replacing them with 3D printed parts.
+            </p>
+
+            <div id="images">
+                <img src="/img/CompFabFinal/metalChair.JPG" alt="placeholder" class="feature" style="width: 22.5%">
+                <img src="/img/CompFabFinal/chairSketches.jpg" alt="placeholder" class="feature" style="width: 40%">
+            </div>
+
+            <p style = "text-align:center;">
+                I created a general box with measurements of the part I want to replace. 
+            </p>
+
+            <div id="images">
+                <img src="/img/CompFabFinal/box.jpg" alt="placeholder" class="feature" style="width: 40%">
+            </div>
+
+            <p>
+                I Populated random points within this box. This is parameterized and can change the number of points with the slider. 
+                You can also change the seed, which gives another set of random points. Using Voronoi3D, I divided the box based on the points. 
+                Voronoi3D divides the region based on all the points close to the seed which is the first random point I generated. 
+
+            <div id="images">
+                <img src="/img/CompFabFinal/boxPoints.jpg" alt="placeholder" class="feature" style="width: 33.5%">
+                <img src="/img/CompFabFinal/voronoi.jpg" alt="placeholder" class="feature" style="width: 40%">
+                <img src="/img/CompFabFinal/DeconBrep.jpg" alt="placeholder" class="feature" style="width: 40%">
+                <img src="/img/CompFabFinal/volumeCen.jpg" alt="placeholder" class="feature" style="width: 39%">
+            </div>
+
+            <div id="images">
+                <img src="/img/CompFabFinal/GH1.jpg" alt="placeholder" class="feature" style="width: 80%">
+            </div>
+
+
+
+
+            <a href="https://www.youtube.com/watch?v=2J1RZWDO8hY">Source</a><br/>
+            <a href="/task2.gh">Grasshopper file</a>
+
+
+        </main>
+    </body>
+</html>
