@@ -72,13 +72,83 @@
                 <img src="/img/CompFabFinal/GH1.jpg" alt="placeholder" class="feature" style="width: 80%">
             </div>
 
+            <p>
+                Once all these parameters are set we can create lines and connect them. I then used the mulipipe to give these lines a thickness. 
+                The multipipe tool gives multiple parameters to control the look of the pipes. I capped the ends with a rounded shape.
+            </p>
 
+            <div id="images">
+                <img src="/img/CompFabFinal/lines.jpg" alt="placeholder" class="feature" style="width: 40%">
+                <img src="/img/CompFabFinal/pipes.jpg" alt="placeholder" class="feature" style="width: 43%">
+            </div>
 
+            <div id="images">
+                <img src="/img/CompFabFinal/GH2.jpg" alt="placeholder" class="feature" style="width: 60%">
+            </div>
 
-            <a href="https://www.youtube.com/watch?v=2J1RZWDO8hY">Source</a><br/>
-            <a href="/task2.gh">Grasshopper file</a>
+            <p>
+                This was the first part of the model. I added boxes to the ends of the structure. 
+                This will be used to connect the 3D printed replacement part to the chair.
+            </p>
 
+            <div id="images">
+                <img src="/img/CompFabFinal/boxes.jpg" alt="placeholder" class="feature" style="width: 41.75%">
+                <img src="/img/CompFabFinal/GH3.jpg" alt="placeholder" class="feature" style="width: 40%">
+            </div>
 
+            <p>
+                I will add some sort of structure to the edges and perimeter of the box for some structural integrity. 
+                I used the same voronoi structures to create the edges. This time I used the WeaverBird plug-in to connect the edges in loops.
+            </p>
+
+            <div id="images">
+                <img src="/img/CompFabFinal/voronoi2.jpg" alt="placeholder" class="feature" style="width: 36%">
+                <img src="/img/CompFabFinal/voronoiNoPipes.jpg" alt="placeholder" class="feature" style="width: 40%">
+                <img src="/img/CompFabFinal/loops.jpg" alt="placeholder" class="feature" style="width: 40%">
+                <img src="/img/CompFabFinal/thicknes.jpg" alt="placeholder" class="feature" style="width: 39%">
+            </div>
+
+            <div id="images">
+                <img src="/img/CompFabFinal/GH4.jpg" alt="placeholder" class="feature" style="width: 75%">
+            </div>
+
+            <p>
+                Here are all elements together. I wanted to add some boxes to be able to slip in the part much easier but I was having trouble doing so.
+            </p>
+
+            <div id="images">
+                <img src="/img/CompFabFinal/all3.jpg" alt="placeholder" class="feature" style="width: 75%">
+            </div>
+
+            <p>
+                These are the two baked examples. I used boxes to make a hole in the initial base box, but when I baked it, the box had no thickness. 
+                When I tested the model on the Prusa slicer it would not give the boxes thickness. I was able to bake it and use the shell comand from Rhino to open the box. 
+                As an alternative to the voronoi edges, I also used the edges of the box and gave them a thickness using pipes. 
+            </p>
+
+            <div id="images">
+                <img src="/img/CompFabFinal/bake1.jpg" alt="placeholder" class="feature" style="width: 40%">
+                <img src="/img/CompFabFinal/bake2.jpg" alt="placeholder" class="feature" style="width: 42%">
+                <img src="/img/CompFabFinal/edgePipes.jpg" alt="placeholder" class="feature" style="width: 42%">
+            </div>
+
+            <p>
+                Final part testing for 3D printing was not effecttive when printed horizontally. I rotated the design and the model printed well. 
+            </p>
+
+            <div id="images">
+                <img src="/img/CompFabFinal/print.jpg" alt="placeholder" class="feature" style="width: 40%">
+            </div>
+
+            <div id="images">
+                <img src="/img/CompFabFinal/Printed2.jpg" alt="placeholder" class="feature" style="width: 40%">
+                <img src="/img/CompFabFinal/Printed1.jpg" alt="placeholder" class="feature" style="width: 40%">
+
+            </div>
+
+            <a href="https://www.youtube.com/watch?v=T4HRsC_YWvM">Refrences</a><br/>
+            <a href="/chairPipes.gh">Grasshopper file</a>
+            
         </main>
     </body>
 </html>
